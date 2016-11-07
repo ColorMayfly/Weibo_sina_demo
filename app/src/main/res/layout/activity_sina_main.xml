@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_base"/>
+    <RadioGroup
+        android:id="@+id/rg_sina_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp">
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="首页"
+            android:drawableTop="@drawable/icon_home"
+            android:textColor="@drawable/color_main"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_attention"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="消息"
+            android:drawableTop="@drawable/icon_news"
+            android:textColor="@drawable/color_main"
+
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_discover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="发现"
+            android:textColor="@drawable/color_main"
+            android:drawableTop="@drawable/icon_discover"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="我的"
+            android:textColor="@drawable/color_main"
+            android:drawableTop="@drawable/icon_my"
+            android:gravity="center"/>
+    </RadioGroup>
+
+</LinearLayout>

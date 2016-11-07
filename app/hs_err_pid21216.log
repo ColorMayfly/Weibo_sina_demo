@@ -1,0 +1,145 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=21216, tid=8056
+#
+# JRE version:  (7.0_80-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.80-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002520800):  JavaThread "Unknown thread" [_thread_in_vm, id=8056, stack(0x0000000002420000,0x0000000002520000)]
+
+Stack: [0x0000000002420000,0x0000000002520000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002520800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8056, stack(0x0000000002420000,0x0000000002520000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 18432K, used 317K [0x00000000eaa80000, 0x00000000ebf00000, 0x0000000100000000)
+  eden space 15872K, 2% used [0x00000000eaa80000,0x00000000eaacf618,0x00000000eba00000)
+  from space 2560K, 0% used [0x00000000ebc80000,0x00000000ebc80000,0x00000000ebf00000)
+  to   space 2560K, 0% used [0x00000000eba00000,0x00000000eba00000,0x00000000ebc80000)
+ ParOldGen       total 41984K, used 0K [0x00000000c0000000, 0x00000000c2900000, 0x00000000eaa80000)
+  object space 41984K, 0% used [0x00000000c0000000,0x00000000c0000000,0x00000000c2900000)
+ PSPermGen       total 21504K, used 697K [0x00000000bae00000, 0x00000000bc300000, 0x00000000c0000000)
+  object space 21504K, 3% used [0x00000000bae00000,0x00000000baeae5c8,0x00000000bc300000)
+
+Card table byte_map: [0x00000000056e0000,0x0000000005910000] byte_map_base: 0x0000000005109000
+
+Polling page: 0x00000000001f0000
+
+Code Cache  [0x0000000002620000, 0x0000000002890000, 0x0000000005620000)
+ total_blobs=38 nmethods=0 adapters=20 free_code_cache=48889Kb largest_free_block=50062528
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.093 loading class 0x00000000025654f0
+Event: 0.093 loading class 0x00000000025654f0 done
+Event: 0.093 loading class 0x0000000002565540
+Event: 0.093 loading class 0x0000000002565540 done
+Event: 0.093 loading class 0x0000000002565590
+Event: 0.094 loading class 0x0000000002565590 done
+Event: 0.096 loading class 0x0000000002566310
+Event: 0.096 loading class 0x0000000002566310 done
+Event: 0.096 loading class 0x0000000002565f30
+Event: 0.096 loading class 0x0000000002565f30 done
+
+
+Dynamic libraries:
+0x00007ff719410000 - 0x00007ff719443000 	D:\Android\Android\JDK\jdk1.7.0_80\bin\java.exe
+0x00007ffb7f4b0000 - 0x00007ffb7f671000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffb7c8f0000 - 0x00007ffb7c99d000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ffb7bbd0000 - 0x00007ffb7bdb8000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ffb7eb20000 - 0x00007ffb7ebc7000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ffb7ebd0000 - 0x00007ffb7ec6d000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ffb7cc30000 - 0x00007ffb7cc8b000 	C:\WINDOWS\system32\sechost.dll
+0x00007ffb7d0c0000 - 0x00007ffb7d1dc000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ffb7ca00000 - 0x00007ffb7cb56000 	C:\WINDOWS\system32\USER32.dll
+0x00007ffb7f310000 - 0x00007ffb7f496000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ffb77be0000 - 0x00007ffb77e54000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.0_none_8c15ae12515e1c22\COMCTL32.dll
+0x00007ffb7f090000 - 0x00007ffb7f30d000 	C:\WINDOWS\system32\combase.dll
+0x00007ffb7bb60000 - 0x00007ffb7bbca000 	C:\WINDOWS\system32\bcryptPrimitives.dll
+0x00007ffb7c8b0000 - 0x00007ffb7c8eb000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007ffb7b9c0000 - 0x00007ffb7b9f1000 	C:\Windows\system32\nvinitx.dll
+0x00007ffb7b9b0000 - 0x00007ffb7b9ba000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x000000000f000000 - 0x000000000f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\_etoured.dll
+0x00007ffb78c60000 - 0x00007ffb78c92000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrapx.dll
+0x00007ffb7cc90000 - 0x00007ffb7d0b9000 	C:\WINDOWS\system32\SETUPAPI.dll
+0x00007ffb7c040000 - 0x00007ffb7c083000 	C:\WINDOWS\system32\CFGMGR32.dll
+0x00007ffb789a0000 - 0x00007ffb789c2000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrapx.dll
+0x0000000074200000 - 0x00000000742d2000 	D:\Android\Android\JDK\jdk1.7.0_80\jre\bin\msvcr100.dll
+0x00000000742e0000 - 0x0000000074ab9000 	D:\Android\Android\JDK\jdk1.7.0_80\jre\bin\server\jvm.dll
+0x00007ffb7e880000 - 0x00007ffb7e888000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ffb79d60000 - 0x00007ffb79d69000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffb7e7a0000 - 0x00007ffb7e80b000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ffb79cd0000 - 0x00007ffb79cf3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffb79ca0000 - 0x00007ffb79ccc000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00000000741f0000 - 0x00000000741ff000 	D:\Android\Android\JDK\jdk1.7.0_80\jre\bin\verify.dll
+0x00000000741c0000 - 0x00000000741e8000 	D:\Android\Android\JDK\jdk1.7.0_80\jre\bin\java.dll
+0x00000000741a0000 - 0x00000000741b6000 	D:\Android\Android\JDK\jdk1.7.0_80\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Xmx1024M -Dfile.encoding=GBK -Duser.country=CN -Duser.language=zh -Duser.variant 
+java_command: com.android.dx.command.Main --dex --num-threads=4 --output D:\Android\newwork\trunk\WeiboOne\app\build\intermediates\pre-dexed\debug\picasso-2.3.2_61b2a15622f7c8c06010157b6de5aba20b589755.jar C:\Users\C\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.3.2\d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27\picasso-2.3.2.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Android\Android\JDK\jdk1.7.0_80
+CLASSPATH= .;D:\Android\Android\JDK\jdk1.7.0_80\lib;D:\Android\Android\JDK\jdk1.7.0_80\lib\tools.jar
+PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Android\Android\JDK\jdk1.7.0_80\bin;D:\Android\Android\JDK\jdk1.7.0_80\jre\bin;
+USERNAME=C
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4028776k(264488k free), swap 9211532k(4884k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.80-b11) for windows-amd64 JRE (1.7.0_80-b15), built on Apr 10 2015 11:26:34 by "java_re" with unknown MS VC++:1600
+
+time: Sat May 14 19:56:09 2016
+elapsed time: 0 seconds
+
